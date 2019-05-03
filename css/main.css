@@ -1,4 +1,5 @@
-/*------------------------------------*    #RESET
+/*------------------------------------*\
+    #RESET
 \*------------------------------------*/
 /**
  * Use border box on all elements
@@ -6,9 +7,10 @@
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -28,36 +30,44 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block; }
+  display: block;
+}
 
 body {
   line-height: 1;
   max-width: 1280px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 ol, ul {
-  list-style: none; }
+  list-style: none;
+}
 
 blockquote, q {
-  quotes: none; }
+  quotes: none;
+}
 
 blockquote:before,
 blockquote:after,
 q:before, q:after {
   content: '';
-  content: none; }
+  content: none;
+}
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 [role=main] {
-  flex: 1; }
+  flex: 1;
+}
 
 /*------------------------------------*    #TABLE
 \*------------------------------------*/
@@ -65,34 +75,42 @@ table {
   margin: 20px 0 30px 0;
   overflow-x: scroll;
   width: 100%;
-  text-align: left; }
+  text-align: left;
+}
 
 .data-table tr {
-  border-bottom: 1px solid #ddd; }
+  border-bottom: 1px solid #ddd;
+}
 
 .data-table thead tr th {
   padding: 16px 56px 16px 24px;
   color: grey;
   font-weight: normal;
   font-size: 13px;
-  border-radius: 0px; }
+  border-radius: 0px;
+}
 
 .data-table tbody tr td {
   padding: 16px 56px 16px 24px;
   font-size: 14px;
-  border-radius: 0px; }
+  border-radius: 0px;
+}
 
 .data-table--medium thead tr th, .data-table--medium tbody tr td {
-  padding: 8px 16px; }
+  padding: 8px 16px;
+}
 
 .data-table--small thead tr th, .data-table--small tbody tr td {
-  padding: 8px 10px; }
+  padding: 8px 10px;
+}
 
 .data-table--small thead tr th {
-  font-size: 12px; }
+  font-size: 12px;
+}
 
 .data-table--small tbody tr td {
-  font-size: 12px; }
+  font-size: 12px;
+}
 
 .data-table tr .table-drop-down-trigger,
 .data-table tr .table-drop-down-trigger {
@@ -102,14 +120,17 @@ table {
   text-align: center;
   margin-right: 10px;
   position: relative;
-  padding-top: 3px; }
+  padding-top: 3px;
+}
 
 .data-table tr .table-drop-down-trigger:hover {
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .data-table tr .table-drop-down,
 .data-table tr .table-drop-down {
-  display: none; }
+  display: none;
+}
 
 .data-table tr .table-drop-down.active,
 .data-table tr .table-drop-down.active {
@@ -118,40 +139,52 @@ table {
   background: white;
   overflow: auto;
   white-space: inherit;
-  max-width: initial; }
+  max-width: initial;
+}
 
 .data-table tr .table-drop-down.active p,
 .data-table tr .table-drop-down.active p {
-  font-weight: normal; }
+  font-weight: normal;
+}
 
 @media only screen and (max-width: 768px) {
   .data-table tr .table-drop-down.active,
   .data-table tr .table-drop-down.active {
-    display: block; }
+    display: block;
+  }
   .data-table {
     width: 100%;
     border: 1px solid #ddd;
-    display: table; }
+    display: table;
+  }
   .data-table thead {
-    display: none; }
+    display: none;
+  }
   .data-table tr {
     border-bottom: 4px solid #ddd;
-    display: block; }
+    display: block;
+  }
   .data-table tr td:first-child {
     font-weight: 700;
-    background-color: #eff2f3; }
+    background-color: #eff2f3;
+  }
   .data-table td {
     border-bottom: 1px solid #ddd;
     display: block;
-    text-align: left; }
+    text-align: left;
+  }
   .data-table td:before {
     content: attr(aria-label);
     display: block;
     clear: both;
     font-weight: bold;
     color: grey;
-    font-size: 0.8em; }
+    font-size: 0.8em;
+  }
   .data-table tbody tr:first-child td {
-    border-top: none; }
+    border-top: none;
+  }
   .data-table tbody tr:first-child td:first-child {
-    border-top: 2px solid #dcdcdc; } }
+    border-top: 2px solid #dcdcdc;
+  }
+}
