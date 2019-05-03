@@ -1,0 +1,123 @@
+/*------------------------------------*\
+    #BLOCKS
+\*------------------------------------*/
+/**
+ * 1) Blocks are collections of text and/or images/media working together as a unit.
+ */
+
+/*------------------------------------*\
+	#HERO BLOCK
+\*------------------------------------*/
+@include b('hero') {
+padding: 30px 30px 30px 60px;
+align-items: center;
+background: black;
+background-position: right;
+background-size: cover;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+min-height: 15em;
+
+  @media only screen and (max-width: 1000px) {
+  padding: 10px;
+  }
+
+}
+
+//hero overall height
+@include b('hero') {
+
+  @include m('height-extrasmall') {
+  min-height: 15em;
+  }
+
+  @include m('height-small') {
+  min-height: 25em;
+  }
+
+  @include m('height-medium') {
+  min-height: 30em;
+  }
+
+  @include m('height-large') {
+  min-height: 35em;
+  }
+
+}
+
+//hero content box width
+@include b('hero-content') {
+max-width: 80em;
+width: 100%;
+text-align: left;
+padding: 20px;
+border-radius: 3px;
+color: white;
+background-color: black;
+background-color: rgba(0,0,0,0.7);
+
+    @include m('width-small') {
+    max-width: 30em
+    }
+
+    @include m('width-medium') {
+    max-width: 45em
+    }
+
+    @include m('width-large') {
+    max-width: 60em
+    }
+
+    @include m('margin-center') {
+    margin: auto;
+    position: relative;
+    top: 20px;
+
+      @media only screen and (max-width: 1000px) {
+      text-align: left;
+      }
+
+      @media only screen and (max-width: 768px) {
+      max-width: fit-content;
+      margin: 20px!important;
+      max-width: none;
+      width: auto;
+      }
+
+    }
+
+}
+
+// Split 50/50 content/image
+@include b('hero') {
+
+  @include m('split') {
+    position: relative;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-color: gray;
+
+    @media only screen and (max-width: 1000px) {
+    background-size: cover;
+    }
+
+    .hero-content {
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    width: 50%;
+    max-width: initial;
+    text-align: left;
+    padding: 20px;
+
+      @media only screen and (max-width: 1000px) {
+      width: 100%;
+      position: static;
+      }
+
+    }
+
+  }
+}

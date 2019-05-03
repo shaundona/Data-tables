@@ -12,16 +12,5 @@ margin-top: 40px;
 }
 
 .main section > div {
-    width: 9%;
-    display: inline-block;
-    vertical-align: top
-}
-
-@media only screen and (max-width: 900px) {
-
-    .main section > div {
     width: 100%;
-    display: block;
-    }
-
 }

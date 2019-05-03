@@ -1,16 +1,20 @@
-# Pencil & Fox SASS Data table
+# Pencil & Fox Hero Banner
 Open-source stylekit generator, optimized for quick reusable frontend styling
 
 ## How it works
-- Copy out the data table styles from main.css file and included them in your own css file.
-- Include the dataTable.js into your own project.
-- Reference the data table markup from the index file as your template.
+- Include main.css styles into your project and your ready to use the hero banner.
+- Use different class names to alter the banner height, width and style
 
-## Demo
-- https://pencilandfox.getforge.io/scrummylibrary/responsive-html-tables
+### Modifiers
+On the parent wrapper (hero) use this class name change to a 50/50 split
+- hero--split
 
-## Requirements
-- jQuery
+On the parent wrapper (hero) use these class names to alter height
+- hero--height-extrasmall, hero--height-small, hero--height-medium, hero--height-large
+
+On the content wrapper (hero-content) use these class names to alter content width
+- hero-content--width-small, hero-content--width-medium, hero-content--width-large
+- hero-content--margin-center
 
 ## Version
 - Version 1.0
